@@ -14,7 +14,7 @@ public class object_use : MonoBehaviour
     void Update()
     {
 
-        
+
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 5))
         {
@@ -24,24 +24,12 @@ public class object_use : MonoBehaviour
 
                 gameObject.GetComponent<Outline>().enabled = true;
 
-                text.enabled=true;
+                text.enabled = true;
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     print("e key was pressed");
                     gameObject.GetComponent<big_doors>().enabled = true;
 
-<<<<<<< Updated upstream
-                    gameObject.GetComponent<Outline>().enabled = true;
-                
-                    text.SetActive(true);
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        print("space key was pressed");
-                        gameObject.GetComponent<big_doors>().enabled = true;
-                        
-                    }
-=======
->>>>>>> Stashed changes
                 }
 
             }
