@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fog : MonoBehaviour
+public class fog_disable : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
