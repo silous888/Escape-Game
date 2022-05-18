@@ -44,5 +44,7 @@ public class object_use : MonoBehaviour
             gameObject.GetComponent<Outline>().enabled = false;
             text.enabled = false;
         }
+
+        
     }
 }
