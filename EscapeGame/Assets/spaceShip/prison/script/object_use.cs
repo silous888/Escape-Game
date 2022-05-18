@@ -22,11 +22,13 @@ public class object_use : MonoBehaviour
                 {
 
                     gameObject.GetComponent<Outline>().enabled = true;
+                
                     text.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         print("space key was pressed");
                         gameObject.GetComponent<big_doors>().enabled = true;
+                        
                     }
                 }
             }
