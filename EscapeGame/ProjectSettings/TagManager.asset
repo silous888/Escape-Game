@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - use
+  - door_block
   layers:
   - Default
   - TransparentFX

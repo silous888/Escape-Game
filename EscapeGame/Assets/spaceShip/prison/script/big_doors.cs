@@ -6,16 +6,70 @@ public class big_doors : MonoBehaviour
 {
     public GameObject left;
     public GameObject right;
-
+    public int doors_type;
+    Vector3 vec;
+    float pos;
+    bool open;
     // Start is called before the first frame update
-
+    private void Start()
+    {
+        if (doors_type == 1)
+        {
+            vec = Vector3.left;
+            pos = left.transform.position[0];
+        }
+        if (doors_type == 2)
+        {
+            vec = Vector3.down;
+            pos = left.transform.position[2];
+        }
+        if (doors_type == 3)
+        {
+            vec = Vector3.up;
+            pos = left.transform.position[2];
+        }
+        
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (left.transform.position[0] < -1.5) gameObject.GetComponent<big_doors>().enabled = false;
-        
-        left.transform.Translate(Vector3.left * Time.deltaTime);
-        right.transform.Translate(Vector3.right * Time.deltaTime);
+        open = left.GetComponent<info_ouverture>().ouvert;
+
+        if ((doors_type == 1) && (Mathf.Abs(left.transform.position[0] - pos) > 3))
+        {
+            gameObject.GetComponent<big_doors>().enabled = false;
+            left.GetComponent<info_ouverture>().ouvert = !open;
+            pos = left.transform.position[0];
+        }
+        if ((doors_type == 2) && (Mathf.Abs(left.transform.position[2] - pos) > 3))
+        {
+            gameObject.GetComponent<big_doors>().enabled = false;
+            left.GetComponent<info_ouverture>().ouvert = !open;
+            pos = left.transform.position[2];
+        }
+        if ((doors_type == 3) && (Mathf.Abs(left.transform.position[2] - pos) > 3))
+        {
+            gameObject.GetComponent<big_doors>().enabled = false;
+            left.GetComponent<info_ouverture>().ouvert = !open;
+            pos = left.transform.position[2];
+        }
+
+
+        if (!open)
+        {
+            //print("ouverture");
+            left.transform.Translate(vec * Time.deltaTime, Space.Self);
+            right.transform.Translate(-vec * Time.deltaTime, Space.Self);
+        }
+        else
+        {
+            //print("fermeture");
+            left.transform.Translate(-vec * Time.deltaTime, Space.Self);
+            right.transform.Translate(vec * Time.deltaTime, Space.Self);
+        }
     
+   
+
     }
+
 }

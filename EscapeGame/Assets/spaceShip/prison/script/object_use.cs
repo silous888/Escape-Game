@@ -21,7 +21,6 @@ public class object_use : MonoBehaviour
             if (hit.transform.gameObject == gameObject)
             {
 
-
                 gameObject.GetComponent<Outline>().enabled = true;
 
                 text.enabled = true;
