@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: cc3d5a73d5e4cf2498bffd1c3c5ad691
 ModelImporter:
-  serializedVersion: 27
+  serializedVersion: 21202
   internalIDToNameTable: []
   externalObjects:
   - first:
@@ -9,8 +9,33 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Corvette-F3
     second: {fileID: 2100000, guid: defbdb8d47c401641be7b7c013675558, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: F3_Red
+    second: {fileID: 2800000, guid: 362827c7c80cd9e4dad7a8027823ee0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: F3_glow
+    second: {fileID: 2800000, guid: 70bd554b4c316834283b85652fe34055, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: F3_metallic
+    second: {fileID: 2800000, guid: d24f46405ad23a7458bda52ff4b44195, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: F3_normal
+    second: {fileID: 2800000, guid: e13c9fe83a91ec9458ca24c1c3ef11d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: F3_roughness
+    second: {fileID: 2800000, guid: bf3250cb262651d41b120bacbad74209, type: 3}
   materials:
-    importMaterials: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -19,6 +44,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -48,20 +74,27 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -91,9 +124,11 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
