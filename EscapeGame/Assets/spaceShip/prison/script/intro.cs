@@ -37,7 +37,7 @@ public class intro : MonoBehaviour
             p_impact = false;
         }
 
-        if (time_start > 15f)
+        if (time_start > 10f)
         {
             if (p_explo)
             {
@@ -45,7 +45,7 @@ public class intro : MonoBehaviour
                 cam.GetComponent<CameraShake>().enabled = true;
                 p_explo = false;
             }
-            if (time_start < 20f)
+            if (time_start < 15f)
             {
 
                 time_left += Time.deltaTime;
@@ -53,8 +53,9 @@ public class intro : MonoBehaviour
                 {
                     if (toggle)
                     {
-                        laser.gameObject.SetActive(false);
                         audioSource.PlayOneShot(zuee, 0.7F);
+                        laser.gameObject.SetActive(false);
+                        
                     }
                     else laser.gameObject.SetActive(true);
                     
