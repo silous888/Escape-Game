@@ -11,6 +11,7 @@ public class intro : MonoBehaviour
     float time_left;
     float time_start;
 
+    public GameObject cam;
     public AudioClip impact;
     public AudioClip boom;
     public AudioClip zuee;
@@ -32,18 +33,19 @@ public class intro : MonoBehaviour
 
         if (p_impact)
         {
-            audioSource.PlayOneShot(impact, 0.7F);
+            audioSource.PlayOneShot(impact, 1.2F);
             p_impact = false;
         }
 
-        if (time_start > 20f)
+        if (time_start > 15f)
         {
             if (p_explo)
             {
                 audioSource.PlayOneShot(boom, 0.7F);
+                cam.GetComponent<CameraShake>().enabled = true;
                 p_explo = false;
             }
-            if (time_start < 25f)
+            if (time_start < 20f)
             {
 
                 time_left += Time.deltaTime;
