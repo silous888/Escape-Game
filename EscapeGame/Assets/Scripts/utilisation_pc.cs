@@ -20,8 +20,7 @@ public class utilisation_pc : MonoBehaviour
     void Update()
     {
 
-        if (!resolu)
-        {
+       
             RaycastHit hit;
             if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 5))
             {
@@ -41,11 +40,11 @@ public class utilisation_pc : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         print("e key was pressed");
+                    if (!resolu)cam.GetComponent<cam_focus_pc>().enabled = true;
+                    else gameObject.GetComponent<big_doors>().enabled = true;
 
-                        cam.GetComponent<cam_focus_pc>().enabled = true;
 
-
-                    }
+                }
 
                 }
                 else
@@ -59,8 +58,8 @@ public class utilisation_pc : MonoBehaviour
 
                 text.enabled = false;
             }
-        }
-        else { }
+        
+        
 
     }
 }

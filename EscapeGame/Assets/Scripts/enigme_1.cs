@@ -24,7 +24,8 @@ public class enigme_1 : MonoBehaviour
             cam_pc.gameObject.SetActive(false);
             player.gameObject.SetActive(true);
             cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
-
+            gameObject.GetComponent<utilisation_pc>().resolu = true;
+            gameObject.GetComponent<big_doors>().enabled = true;
 
         }
     }
