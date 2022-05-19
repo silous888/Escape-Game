@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class intro : MonoBehaviour
 {
+    public GameObject alarm;
     public GameObject laser;
     public float periode;
     bool toggle = false;
@@ -14,25 +15,37 @@ public class NewBehaviourScript : MonoBehaviour
     public AudioClip boom;
     public AudioClip zuee;
     AudioSource audioSource;
-    bool play;
+    bool p_impact;
+    bool p_explo;
 
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        play = true;
+        p_impact = true;
+        p_explo = true;
     }
     // Update is called once per frame
     void Update()
     {
         time_start += Time.deltaTime;
-        
-        if(play) audioSource.PlayOneShot(impact, 0.7F);
+
+        if (p_impact)
+        {
+            audioSource.PlayOneShot(impact, 0.7F);
+            p_impact = false;
+        }
 
         if (time_start > 20f)
         {
+            if (p_explo)
+            {
+                audioSource.PlayOneShot(boom, 0.7F);
+                p_explo = false;
+            }
             if (time_start < 25f)
             {
+
                 time_left += Time.deltaTime;
                 if (time_left > periode)
                 {
@@ -41,7 +54,6 @@ public class NewBehaviourScript : MonoBehaviour
                         laser.gameObject.SetActive(false);
                         audioSource.PlayOneShot(zuee, 0.7F);
                     }
-
                     else laser.gameObject.SetActive(true);
                     
                     time_left = 0f;
@@ -51,6 +63,7 @@ public class NewBehaviourScript : MonoBehaviour
             else
             {
                 laser.gameObject.SetActive(false);
+                alarm.gameObject.SetActive(true);
             }
         }
         
