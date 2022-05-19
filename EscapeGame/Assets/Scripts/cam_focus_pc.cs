@@ -13,7 +13,7 @@ public class cam_focus_pc : MonoBehaviour
 
     private void Start()
     {
-        
+        cam_pc.gameObject.SetActive(true);
       
     }
 
