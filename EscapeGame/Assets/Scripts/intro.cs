@@ -65,6 +65,7 @@ public class intro : MonoBehaviour
             }
             else
             {
+                cam.GetComponent<CameraShake>().enabled = false;
                 laser.gameObject.SetActive(false);
                 alarm.gameObject.SetActive(true);
             }
