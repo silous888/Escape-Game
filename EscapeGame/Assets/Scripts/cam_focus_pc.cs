@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cam_focus_pc : MonoBehaviour
 {
-
+    public GameObject player;
     public GameObject cam_pc;
     public GameObject cam_player;
     public GameObject pc;
@@ -13,7 +13,7 @@ public class cam_focus_pc : MonoBehaviour
 
     private void Start()
     {
-      
+        
       
     }
 

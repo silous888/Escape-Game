@@ -28,7 +28,7 @@ public class utilisation_pc : MonoBehaviour
                 {
                     print("e key was pressed");
 
-                    gameObject.GetComponent<cam_focus_pc>().enabled = true;
+                    cam.GetComponent<cam_focus_pc>().enabled = true;
 
                 }
 
