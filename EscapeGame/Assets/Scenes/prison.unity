@@ -50815,7 +50815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTransform: {fileID: 0}
-  shakeDuration: 9
+  shakeDuration: 5
   shakeAmount: 0.7
   decreaseFactor: 1
 --- !u!33 &8354665135245581453
