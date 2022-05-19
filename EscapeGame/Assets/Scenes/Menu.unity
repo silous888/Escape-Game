@@ -1356,7 +1356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Escape Game
+  m_text: SpaceScape Fusion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8d6ef1015fceb0499dc7f5f2e78c2b4, type: 2}
   m_sharedMaterial: {fileID: 5974789091857954379, guid: f8d6ef1015fceb0499dc7f5f2e78c2b4, type: 2}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -645.53143, y: 0, z: -54.925537, w: 0}
+  m_margin: {x: -645.53143, y: 0, z: -58.578476, w: -35.93988}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
