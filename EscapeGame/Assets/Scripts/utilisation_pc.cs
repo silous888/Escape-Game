@@ -23,12 +23,16 @@ public class utilisation_pc : MonoBehaviour
 
                 gameObject.GetComponent<Outline>().enabled = true;
 
-                text.enabled = true;
+                if (cam.GetComponent<cam_focus_pc>().enabled) text.enabled = false;
+                else text.enabled = true;
+
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     print("e key was pressed");
 
                     cam.GetComponent<cam_focus_pc>().enabled = true;
+                    
 
                 }
 

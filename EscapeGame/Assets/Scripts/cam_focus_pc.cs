@@ -13,7 +13,8 @@ public class cam_focus_pc : MonoBehaviour
 
     private void Start()
     {
-     //   cam_pc.gameObject.SetActive(true)
+
+       
       
     }
 
@@ -26,5 +27,12 @@ public class cam_focus_pc : MonoBehaviour
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = smoothedPosition;
         transform.LookAt(pc.transform.position);
+
+        if (((Mathf.Abs(cam_pc.transform.position[2] - cam_player.transform.position[2]) <0.2f))&& ((Mathf.Abs(cam_pc.transform.position[0] - cam_player.transform.position[0]) < 0.2f)))
+        {
+            cam_pc.gameObject.SetActive(true);
+            player.gameObject.SetActive(false);
+            gameObject.GetComponent<cam_focus_pc>().enabled = false;
+        }
     }
 }
