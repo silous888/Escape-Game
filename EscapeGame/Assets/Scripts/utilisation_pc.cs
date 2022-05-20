@@ -44,7 +44,7 @@ public class utilisation_pc : MonoBehaviour
                     else gameObject.GetComponent<big_doors>().enabled = true;
 
 
-                }
+                    }
 
                 }
                 else
