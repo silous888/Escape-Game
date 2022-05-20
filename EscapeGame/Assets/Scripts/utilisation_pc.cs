@@ -19,8 +19,6 @@ public class utilisation_pc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-       
             RaycastHit hit;
             if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 5))
             {

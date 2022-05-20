@@ -58,14 +58,14 @@ public class big_doors : MonoBehaviour
         if (!open)
         {
             //print("ouverture");
-            left.transform.Translate(vec * Time.deltaTime, Space.Self);
-            right.transform.Translate(-vec * Time.deltaTime, Space.Self);
+            left.transform.Translate(vec *2.0f* Time.deltaTime, Space.Self);
+            right.transform.Translate(-vec * 2.0f*Time.deltaTime, Space.Self);
         }
         else
         {
             //print("fermeture");
-            left.transform.Translate(-vec * Time.deltaTime, Space.Self);
-            right.transform.Translate(vec * Time.deltaTime, Space.Self);
+            left.transform.Translate(-vec *2.0f* Time.deltaTime, Space.Self);
+            right.transform.Translate(vec *2.0f* Time.deltaTime, Space.Self);
         }
     
    
