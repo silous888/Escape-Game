@@ -37,8 +37,9 @@ public class enigme_1 : MonoBehaviour
 
         if (error >= nb_erreurMax)
         {
+            
+            player.gameObject.SetActive(true);
             gameOver.enabled = true;
-            player.SetActive(true);
             prison.SetActive(false);
         }
 
@@ -80,7 +81,7 @@ public class enigme_1 : MonoBehaviour
         {
             case 0:
                 if (Input.GetKeyDown(keys[0])) return true;
-               // else if ((Input.GetKeyDown(keys[1])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3]))) error++;
+                else if ((Input.GetKeyDown(keys[1])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3]))) error++;
                 break;
 
             case 1:
