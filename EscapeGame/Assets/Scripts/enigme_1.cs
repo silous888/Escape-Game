@@ -33,27 +33,26 @@ public class enigme_1 : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
-        if (error >= nb_erreurMax)
-        {
-            
-            player.gameObject.SetActive(true);
-            gameOver.enabled = true;
-            prison.SetActive(false);
-        }
+    { 
 
         time += Time.deltaTime;
         if (time > 2.0f)
         {
 
-            if (question_actuelle==6)
+            if( (question_actuelle==6)|| (error >= nb_erreurMax))
             {
                 print("fin enigme 1");
 
                 cam_pc.gameObject.SetActive(false);
                 player.gameObject.SetActive(true);
                 cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
+
+                if (error >= nb_erreurMax)
+                {
+                    gameOver.enabled = true;
+                    prison.SetActive(false);
+                }
+
                 gameObject.GetComponent<utilisation_pc>().resolu = true;
                 gameObject.GetComponent<big_doors>().enabled = true;
                 gameObject.GetComponent<enigme_1>().enabled = false;

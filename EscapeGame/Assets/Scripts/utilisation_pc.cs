@@ -55,7 +55,7 @@ public class utilisation_pc : MonoBehaviour
             }
             else
             {
-
+                gameObject.GetComponent<Outline>().enabled = false;
                 text.enabled = false;
             }
         

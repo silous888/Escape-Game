@@ -29,7 +29,12 @@ public class CameraShake : MonoBehaviour
 		originalPos = camTransform.localPosition;
 	}
 
-	void Update()
+    private void OnDisable()
+    {
+		camTransform.localPosition = originalPos;
+	}
+
+    void Update()
 	{
 		if (shakeDuration > 0)
 		{
