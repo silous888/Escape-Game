@@ -16,7 +16,7 @@ public class key_corpse : MonoBehaviour
 
 
         RaycastHit hit;
-        if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 5))
+        if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 15))
         {
             if (hit.transform.gameObject == gameObject)
             {
