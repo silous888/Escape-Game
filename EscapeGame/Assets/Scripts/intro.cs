@@ -42,6 +42,7 @@ public class intro : MonoBehaviour
             if (p_explo)
             {
                 audioSource.PlayOneShot(boom, 0.7F);
+                print("shake");
                 cam.GetComponent<CameraShake>().enabled = true;
                 p_explo = false;
             }
