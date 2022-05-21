@@ -45,7 +45,7 @@ public class intro : MonoBehaviour
                 cam.GetComponent<CameraShake>().enabled = true;
                 p_explo = false;
             }
-            if (time_start < 15f)
+            if ((time_start > 12f) && (time_start < 17f))
             {
 
                 time_left += Time.deltaTime;
