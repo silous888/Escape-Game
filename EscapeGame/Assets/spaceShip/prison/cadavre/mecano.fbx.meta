@@ -3,7 +3,32 @@ guid: 237337be2a2ccbf46be7f6adce97865d
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bob01
+    second: {fileID: 2100000, guid: 97c36260fadefe045a6f213169d578b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high-poly
+    second: {fileID: 2100000, guid: ac79a2e5f67d956499864419ce6e95ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: male_worksuit01
+    second: {fileID: 2100000, guid: 01e90fa8eaf0fbb4586263a42d3ee110, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mecano
+    second: {fileID: 2100000, guid: 9fb99071e6c905f4f8d063f82670f38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shoes01
+    second: {fileID: 2100000, guid: 11878a3f789eb634fbec003762404575, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
