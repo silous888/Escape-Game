@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class enigme_1 : MonoBehaviour
 {
     public GameObject prison;
-    public Text gameOver;
+    public GameObject gameOver;
     public GameObject player;
     public GameObject cam_pc;
     public GameObject cam_player;
@@ -49,7 +49,7 @@ public class enigme_1 : MonoBehaviour
 
                 if (error >= nb_erreurMax)
                 {
-                    gameOver.enabled = true;
+                    gameOver.SetActive(true);
                     prison.SetActive(false);
                 }
 
