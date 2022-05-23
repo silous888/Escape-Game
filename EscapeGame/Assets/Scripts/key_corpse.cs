@@ -10,7 +10,7 @@ public class key_corpse : MonoBehaviour
     // Start is called before the first frame update
     public GameObject cam;
     public Text text;
-
+    public GameObject player;
     void Update()
     {
 
@@ -28,7 +28,7 @@ public class key_corpse : MonoBehaviour
                 {
                     print("e key was pressed");
                     //Executer ici le script !
-
+                    player.GetComponent<inventaire>().key_red = true;
                 }
 
             }
