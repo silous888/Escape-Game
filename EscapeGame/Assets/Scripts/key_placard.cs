@@ -5,7 +5,7 @@ using UnityEngine.UI;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
-public class key_corpse : MonoBehaviour
+public class key_placard: MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cam;
@@ -28,7 +28,7 @@ public class key_corpse : MonoBehaviour
                 {
                     print("e key was pressed");
                     //Executer ici le script !
-                    player.GetComponent<inventaire>().key_red = true;
+                    player.GetComponent<inventaire>().key_green = true;
                     text.enabled = false;
                     gameObject.SetActive(false);
                 }
