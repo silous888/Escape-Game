@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveCameraAuto2 : MonoBehaviour
+public class Credits2 : MonoBehaviour
 {
-    float speed=1f;
+    float speed =-0.5f;
 
-       // Update is called once per frame
-       void Update()
+    // Update is called once per frame
+    void Update()
     {
         transform.Translate(0, speed, 0);
     }
