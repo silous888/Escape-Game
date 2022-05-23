@@ -21,8 +21,8 @@ public class inventaire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (wrench)wrench_im.enabled = true;
-        else wrench_im.enabled = false;
+    //    if (wrench)wrench_im.enabled = true;
+   //     else wrench_im.enabled = false;
 
     }
 }
