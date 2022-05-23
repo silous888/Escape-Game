@@ -8,9 +8,25 @@ public class enigme_2 : MonoBehaviour
     public bool resolu;
     public GameObject porte_placard;
 
+    public GameObject player;
+    public GameObject cam_pc;
+    public GameObject cam_player;
+
+
     // Update is called once per frame
     void Update()
     {
         if (resolu) porte_placard.GetComponent<Animation>().enabled = true;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+            print("defocus");
+            cam_pc.gameObject.SetActive(false);
+            player.gameObject.SetActive(true);
+            cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
+
+        }
+
     }
 }
