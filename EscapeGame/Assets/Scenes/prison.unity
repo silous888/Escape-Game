@@ -2142,6 +2142,7 @@ GameObject:
   - component: {fileID: 365358159}
   - component: {fileID: 365358162}
   - component: {fileID: 365358163}
+  - component: {fileID: 365358164}
   m_Layer: 0
   m_Name: Cylinder.229 (1)
   m_TagString: Untagged
@@ -2262,6 +2263,23 @@ MonoBehaviour:
   text: {fileID: 2050775662}
   resolu: 0
   cam_pc: {fileID: 1163172449}
+--- !u!114 &365358164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365358157}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5b77a938c04fc44a3c9d5cfff7c22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolu: 0
+  porte_placard: {fileID: 1131283148222723894}
+  player: {fileID: 1313063170}
+  cam_pc: {fileID: 1163172449}
+  cam_player: {fileID: 2050124133}
 --- !u!64 &371803419
 MeshCollider:
   m_ObjectHideFlags: 0

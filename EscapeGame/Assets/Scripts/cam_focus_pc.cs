@@ -12,10 +12,10 @@ public class cam_focus_pc : MonoBehaviour
     public float x, y, z;
     Vector3 pos_origin;
     public int num_enigme;
-    private void Start()
+    private void OnEnable()
     {
         pos_origin = cam_player.transform.position;
-       
+        print("save position");
       
     }
 
@@ -45,7 +45,7 @@ public class cam_focus_pc : MonoBehaviour
 
         bool cond()
         {
-            return ((Mathf.Abs(cam_pc.transform.position[2] - cam_player.transform.position[2]) < 0.2f)) && ((Mathf.Abs(cam_pc.transform.position[0] - cam_player.transform.position[0]) < 0.2f));
+            return ((Mathf.Abs(cam_pc.transform.position[2] - cam_player.transform.position[2]) < 0.5f)) && ((Mathf.Abs(cam_pc.transform.position[0] - cam_player.transform.position[0]) < 0.5f));
         }
 
 
