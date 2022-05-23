@@ -75,6 +75,7 @@ public class intro : MonoBehaviour
                 laser.gameObject.SetActive(false);
                 alarm.gameObject.SetActive(true);
             }
+            
         }
         
     }
