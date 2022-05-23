@@ -29,6 +29,7 @@ public class key_corpse : MonoBehaviour
                     print("e key was pressed");
                     //Executer ici le script !
                     player.GetComponent<inventaire>().key_red = true;
+                    gameObject.SetActive(false);
                 }
 
             }
