@@ -47,8 +47,9 @@ public class utilisation_pc2 : MonoBehaviour
                     cam.GetComponent<cam_focus_pc>().z = 0;
                     cam.GetComponent<cam_focus_pc>().pc = gameObject;
                     gameObject.GetComponent<enigme_2>().enabled = true;
+                    gameObject.GetComponent<enigme_2>().resolu = true;
                     if (!resolu) cam.GetComponent<cam_focus_pc>().enabled = true;
-                    else gameObject.GetComponent<enigme_2>().resolu = true;
+                    
 
 
                 }

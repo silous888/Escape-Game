@@ -18,7 +18,7 @@ public class enigme_2 : MonoBehaviour
     {
         if (resolu) porte_placard.GetComponent<Animation>().enabled = true;
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
             print("defocus");
