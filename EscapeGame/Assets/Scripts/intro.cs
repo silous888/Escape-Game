@@ -25,27 +25,33 @@ public class intro : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         p_impact = true;
         p_explo = true;
+        
     }
     // Update is called once per frame
     void Update()
     {
         time_start += Time.deltaTime;
-
+        
         if (p_impact)
         {
             audioSource.PlayOneShot(impact, 1.2F);
             p_impact = false;
         }
 
-        if (time_start > 10f)
+        if ((time_start > 10f)&& (time_start < 20f))
         {
-            if (p_explo)
+            
+            if ((p_explo)&& (time_start > 11f))
             {
+
+                gameObject.GetComponent<CameraShake>().enabled = true;
                 audioSource.PlayOneShot(boom, 0.7F);
-                cam.GetComponent<CameraShake>().enabled = true;
                 p_explo = false;
             }
-            if (time_start < 15f)
+           
+
+
+            if ((time_start > 12f) && (time_start < 17f))
             {
 
                 time_left += Time.deltaTime;
@@ -63,9 +69,9 @@ public class intro : MonoBehaviour
                     toggle = !toggle;
                 }
             }
-            else
+            else if (time_start > 17f)
             {
-                cam.GetComponent<CameraShake>().enabled = false;
+                gameObject.GetComponent<CameraShake>().enabled = false;
                 laser.gameObject.SetActive(false);
                 alarm.gameObject.SetActive(true);
             }
