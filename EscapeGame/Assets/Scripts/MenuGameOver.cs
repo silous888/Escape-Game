@@ -9,9 +9,7 @@ public class MenuGameOver : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined; 
-
     }
-
     public void ButtonRetourMenu()
     {
         // Play Now Button has been pressed, here you can initialize your game (For example Load a Scene called GameLevel etc.)
