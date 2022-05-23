@@ -11,7 +11,7 @@ public class cam_focus_pc : MonoBehaviour
     public float smoothSpeed = 0.05f;
     public float x, y, z;
     Vector3 pos_origin;
-
+    public int num_enigme;
     private void Start()
     {
         pos_origin = cam_player.transform.position;
@@ -29,7 +29,7 @@ public class cam_focus_pc : MonoBehaviour
         transform.position = smoothedPosition;
         transform.LookAt(pc.transform.position);
 
-        if (((Mathf.Abs(cam_pc.transform.position[2] - cam_player.transform.position[2]) <0.2f))&& ((Mathf.Abs(cam_pc.transform.position[0] - cam_player.transform.position[0]) < 0.2f)))
+        if (cond())
         {
 
             
@@ -37,9 +37,17 @@ public class cam_focus_pc : MonoBehaviour
             player.gameObject.SetActive(false);
             pc.GetComponent<Outline>().enabled = false;
             //gameObject.GetComponent<utilisation_pc>().resolu = true;
-            pc.GetComponent<enigme_1>().enabled = true;
+            if(num_enigme==1)pc.GetComponent<enigme_1>().enabled = true;
+            //if (num_enigme == 2) pc.GetComponent<enigme_2>().enabled = true;
             cam_player.transform.position = pos_origin;
             //Cursor.lockState = CursorLockMode.None;
         }
+
+        bool cond()
+        {
+            return ((Mathf.Abs(cam_pc.transform.position[2] - cam_player.transform.position[2]) < 0.2f)) && ((Mathf.Abs(cam_pc.transform.position[0] - cam_player.transform.position[0]) < 0.2f));
+        }
+
+
     }
 }
