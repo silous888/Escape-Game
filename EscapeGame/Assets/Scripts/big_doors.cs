@@ -10,6 +10,9 @@ public class big_doors : MonoBehaviour
     Vector3 vec;
     float pos;
     bool open;
+    public AudioClip zuee;
+    bool play_sound_ouverture;
+    bool play_sound_fermeture;
     // Start is called before the first frame update
     private void Start()
     {
@@ -28,7 +31,8 @@ public class big_doors : MonoBehaviour
             vec = Vector3.up;
             pos = left.transform.position[2];
         }
-        
+        play_sound_ouverture = true;
+        play_sound_fermeture = false;
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -60,12 +64,27 @@ public class big_doors : MonoBehaviour
             //print("ouverture");
             left.transform.Translate(vec *5.0f* Time.deltaTime, Space.Self);
             right.transform.Translate(-vec * 5.0f*Time.deltaTime, Space.Self);
+
+            if (play_sound_ouverture)
+            {
+                play_sound_ouverture = false;
+                play_sound_fermeture = true;
+                left.GetComponent<AudioSource>().PlayOneShot(zuee, 0.7f);
+            }
+            
         }
         else
         {
             //print("fermeture");
             left.transform.Translate(-vec *5.0f* Time.deltaTime, Space.Self);
             right.transform.Translate(vec *5.0f* Time.deltaTime, Space.Self);
+
+            if (play_sound_fermeture)
+            {
+                play_sound_fermeture = false;
+                play_sound_ouverture = true;
+                left.GetComponent<AudioSource>().PlayOneShot(zuee, 0.7f);
+            }
         }
     
    

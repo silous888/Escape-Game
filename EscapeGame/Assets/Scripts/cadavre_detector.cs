@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class cadavre_detector : MonoBehaviour
 {
-    bool play_cadavre;
+    //bool play_cadavre;
     public GameObject cam;
     // Start is called before the first frame update
     void Start()
     {
-        play_cadavre = true;
+        //play_cadavre = true;
     }
 
     // Update is called once per frame
