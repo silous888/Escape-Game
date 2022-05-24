@@ -17,6 +17,8 @@ public class enigme_1 : MonoBehaviour
     bool[] repondu;
     int question_actuelle;
     KeyCode[] keys;
+    bool play_mdp_oublie;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +31,20 @@ public class enigme_1 : MonoBehaviour
         question_actuelle = 1;
 
         keys = new KeyCode[4] { KeyCode.A, KeyCode.B, KeyCode.C, KeyCode.D};
+        play_mdp_oublie = true;
+        
     }
 
     // Update is called once per frame
     void Update()
-    { 
-
+    {
+        if (play_mdp_oublie)
+        {
+            play_mdp_oublie = false;
+            cam_pc.GetComponent<voice_gestion>().mdp_play();
+        }
         time += Time.deltaTime;
-        if (time > 2.0f)
+        if (time > 5.0f)
         {
 
             if( (question_actuelle==6)|| (error >= nb_erreurMax))
@@ -52,7 +60,7 @@ public class enigme_1 : MonoBehaviour
                     gameOver.SetActive(true);
                     prison.SetActive(false);
                 }
-
+                
                 gameObject.GetComponent<utilisation_pc>().resolu = true;
                 gameObject.GetComponent<big_doors>().enabled = true;
                 gameObject.GetComponent<enigme_1>().enabled = false;

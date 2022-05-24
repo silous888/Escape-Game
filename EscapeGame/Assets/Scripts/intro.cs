@@ -18,13 +18,14 @@ public class intro : MonoBehaviour
     AudioSource audioSource;
     bool p_impact;
     bool p_explo;
-
+    bool security;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         p_impact = true;
         p_explo = true;
+        security = true;
         
     }
     // Update is called once per frame
@@ -74,6 +75,11 @@ public class intro : MonoBehaviour
                 gameObject.GetComponent<CameraShake>().enabled = false;
                 laser.gameObject.SetActive(false);
                 alarm.gameObject.SetActive(true);
+                if (security)
+                {
+                    security = false;
+                    cam.GetComponent<voice_gestion>().security_play();
+                }
             }
             
         }
