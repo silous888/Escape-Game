@@ -9,6 +9,7 @@ public class wrench_placard : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cam;
+    public GameObject wrench;
     public Text text;
     public GameObject player;
     void Update()
@@ -21,7 +22,7 @@ public class wrench_placard : MonoBehaviour
             if (hit.transform.gameObject == gameObject)
             {
 
-                gameObject.GetComponent<Outline>().enabled = true;
+                wrench.GetComponent<Outline>().enabled = true;
 
                 text.enabled = true;
                 if (Input.GetKeyDown(KeyCode.E))
@@ -30,19 +31,19 @@ public class wrench_placard : MonoBehaviour
                     //Executer ici le script !
                     player.GetComponent<inventaire>().wrench = true;
                     text.enabled = false;
-                    gameObject.SetActive(false);
+                    wrench.SetActive(false);
                 }
 
             }
             else
             {
-                gameObject.GetComponent<Outline>().enabled = false;
+                wrench.GetComponent<Outline>().enabled = false;
                 text.enabled = false;
             }
         }
         else
         {
-            gameObject.GetComponent<Outline>().enabled = false;
+            wrench.GetComponent<Outline>().enabled = false;
             text.enabled = false;
         }
 
