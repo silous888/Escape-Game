@@ -29,12 +29,12 @@ public class enigme_2 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Cursor.lockState = CursorLockMode.Locked;
             print("defocus");
             interfaceEnigme.SetActive(false);
             cam_pc.gameObject.SetActive(false);
             player.gameObject.SetActive(true);
             cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
+            Cursor.lockState = CursorLockMode.Locked;
 
         }
 
