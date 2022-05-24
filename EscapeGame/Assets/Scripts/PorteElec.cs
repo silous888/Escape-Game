@@ -24,7 +24,7 @@ public class PorteElec : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 15))
         {
-            if (hit.transform.gameObject == gameObject)
+            if (hit.transform.gameObject == gameObject && player.GetComponent<inventaire>().wrench==true)
             {
 
                 gameObject.GetComponent<Outline>().enabled = true;
