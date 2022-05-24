@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b22c1cb40afd6479debc8dd718cc3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.6
+  speed: 0.4
   limit: -4500
 --- !u!1 &966343144
 GameObject:
@@ -862,30 +862,30 @@ MonoBehaviour:
     des Humains aux Kig-Yar, des rapaces humanoides, en passant par les Mgalekgolo,
     une espece d\u2019agglomerat d\u2019anguilles de l\u2019espace. \nCependant,
     la pression toujours grandissante de la Federation sur les colonies exterieures
-    a abouti \xE0 un debut de revolution. Divers bataillons des Space Rebels, comme
+    a abouti a un debut de revolution. Divers bataillons des Space Rebels, comme
     ils aiment se faire appeler, convergent desormais vers BSL-SR388, une station
     et prison spatiale de la Federation. \nL\u2019objectif de ces pirates de l\u2019espace
-    est d\u2019en prendre le controle afin de mettre \xE0 mal la dictature galactique
+    est d\u2019en prendre le controle afin de mettre a mal la dictature galactique
     dans cette partie du nuage d\u2019Eridanus. Certaines colonies des bordures exterieures
     ont meme rejoint ces rebelles et pour la Federation, il n\u2019est plus envisageable
-    d\u2019ignorer cette menace.  Ils ont donc renforcer les defenses en prevision
-    d\u2019une attaque imminente sur BSL-SR388.\r\n\n\tQuant \xE0 vous, vous incarnez
-    Camren Curtis, le plus grand contrebandier de tous les nuages d\u2019eridanus 
-    et plus encore. enfin \xE7a c\u2019est que vous vous persuader chaque matin.
-    Pilote hors pair mais souvent dans les mauvaises affaires, vous avez ete pris
-    en flagrant delit de fornication avec la princesse anguille Kriq\u2019is dont
-    la beaute n\u2019a d\u2019egale que son nombre de tentacules suinteux et visqueux.
-    en plus de cela, les forces d\u2019interventions ont trouve dans votre vaisseau
-    une grande quantite d\u2019epices, drogue interdite dans la galaxie. \nAinsi,
-    on vous a envoye sur BSL-SR388 afin de purger votre peine en attendant un jugement.
-    Heureusement pour vous, la chance ne vous a pas tourne le dos. Apres quelques
-    jours d\u2019emprisonnement, la flotte rebelle attaque la station spatiale.\nBoooM.
-    Vous vous reveillez avec un vacarme assourdissant pouvant meme faire trembler
-    les fondations du monde. L'artillerie rebelle vient de frapper BSL-SR388 de plein
-    fouet et toutes les alarmes s\u2019affolent. Vous apercevez \xE0 travers votre
-    hublot spatial que des vaisseaux corvettes sont en train d\u2019aborder la station.
-    La securite de votre prison se desactive. L\u2019alerte d\u2019urgence retentit.
-    C\u2019est le moment de meriter votre liberte. \r\n"
+    d\u2019ignorer cette menace.  ils ont donc renforcer les defenses en prevision
+    d\u2019une attaque imminente sur BSL-SR388.\r\n\n\tquant a vous, vous incarnez
+    Camren \"Johnny\" Curtis, le plus grand contrebandier de tous les nuages d\u2019eridanus 
+    et plus encore. enfin ca c\u2019est que vous vous persuader chaque matin. Pilote
+    hors pair mais souvent dans les mauvaises affaires, vous avez ete pris en flagrant
+    delit de fornication avec la princesse anguille Kriq\u2019is dont la beaute n\u2019a
+    d\u2019egale que son nombre de tentacules suinteux et visqueux. en plus de cela,
+    les forces d\u2019interventions ont trouve dans votre vaisseau une grande quantite
+    d\u2019epices, drogue interdite dans la galaxie. \nAinsi, on vous a envoye sur
+    BSL-SR388 afin de purger votre peine en attendant un jugement. Heureusement pour
+    vous, la chance ne vous a pas tourne le dos. Apres quelques jours d\u2019emprisonnement,
+    la flotte rebelle attaque la station spatiale.\nBoooM. vous vous reveillez avec
+    un vacarme assourdissant pouvant meme faire trembler les fondations du monde.
+    L'artillerie rebelle vient de frapper BSL-SR388 de plein fouet et toutes les
+    alarmes s\u2019affolent. Vous apercevez a travers votre hublot spatial que des
+    vaisseaux corvettes sont en train d\u2019aborder la station. La securite de votre
+    prison se desactive. L\u2019alerte d\u2019urgence retentit. C\u2019est le moment
+    de meriter votre liberte. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea81bdd38b53f02459c39edc2e5041f3, type: 2}
   m_sharedMaterial: {fileID: 2747096200530360766, guid: ea81bdd38b53f02459c39edc2e5041f3, type: 2}
