@@ -12,6 +12,7 @@ public class utilisation_pc : MonoBehaviour
     public GameObject cam_pc;
     public Text text;
     public bool resolu;
+    public GameObject curseur;
     public bool play_papa;
     private void Start()
     {
@@ -47,6 +48,7 @@ public class utilisation_pc : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     print("e key was pressed");
+                    curseur.SetActive(false);
                     cam.GetComponent<cam_focus_pc>().pc = gameObject;
                     cam.GetComponent<cam_focus_pc>().cam_pc = cam_pc;
                     cam.GetComponent<cam_focus_pc>().num_enigme = 1;
@@ -57,6 +59,7 @@ public class utilisation_pc : MonoBehaviour
                     else
                     {
                     gameObject.GetComponent<big_doors>().enabled = true;
+                    curseur.SetActive(true);
                     }
 
                 }

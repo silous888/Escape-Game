@@ -13,6 +13,7 @@ public class utilisation_pc2 : MonoBehaviour
     public bool resolu;
     public GameObject cam_pc;
     public GameObject interfaceEnigme;
+    public GameObject curseur;
 
 
     private void Start()
@@ -32,6 +33,7 @@ public class utilisation_pc2 : MonoBehaviour
                     if (cam.GetComponent<cam_focus_pc>().enabled)
                     {
                         text.enabled = false;
+                        curseur.SetActive(false);
                         gameObject.GetComponent<Outline>().enabled = false;
                     }
                     else
@@ -53,7 +55,7 @@ public class utilisation_pc2 : MonoBehaviour
                         cam.GetComponent<cam_focus_pc>().pc = gameObject;
                         gameObject.GetComponent<enigme_2>().enabled = true;
                         if (!resolu) cam.GetComponent<cam_focus_pc>().enabled = true;
-                        
+
 
 
                     }

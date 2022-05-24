@@ -14,6 +14,7 @@ public class enigme_2 : MonoBehaviour
     public GameObject cam_pc;
     public GameObject cam_player;
     public GameObject interfaceEnigme;
+    public GameObject curseur;
     public TMP_InputField reponse;
 
 
@@ -33,6 +34,7 @@ public class enigme_2 : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             cam_pc.gameObject.SetActive(false);
             player.gameObject.SetActive(true);
+            curseur.SetActive(true);
             cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
             gameObject.GetComponent<enigme_2>().enabled = false;
         }
@@ -40,6 +42,7 @@ public class enigme_2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             print("defocus");
+            curseur.SetActive(true);
             interfaceEnigme.SetActive(false);
             cam_pc.gameObject.SetActive(false);
             player.gameObject.SetActive(true);

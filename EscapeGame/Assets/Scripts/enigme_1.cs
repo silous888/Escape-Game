@@ -10,6 +10,7 @@ public class enigme_1 : MonoBehaviour
     public GameObject player;
     public GameObject cam_pc;
     public GameObject cam_player;
+    public GameObject curseur;
     public Texture[] Question;
     public int error;
     public int nb_erreurMax;
@@ -53,6 +54,7 @@ public class enigme_1 : MonoBehaviour
 
                 cam_pc.gameObject.SetActive(false);
                 player.gameObject.SetActive(true);
+                curseur.SetActive(true);
                 cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
 
                 if (error >= nb_erreurMax)

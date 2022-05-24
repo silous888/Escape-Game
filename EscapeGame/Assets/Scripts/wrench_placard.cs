@@ -32,6 +32,7 @@ public class wrench_placard : MonoBehaviour
                     player.GetComponent<inventaire>().wrench = true;
                     text.enabled = false;
                     wrench.SetActive(false);
+                    gameObject.SetActive(false);
                 }
 
             }
