@@ -13,10 +13,11 @@ public class pc_corridor : MonoBehaviour
     public Text use_keys;
     public Text not_all_keys;
     public GameObject player;
-
+    public AudioClip doorSound;
+    AudioSource audioSource;
     private void Start()
     {
-       
+        audioSource = cam.GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -45,6 +46,8 @@ public class pc_corridor : MonoBehaviour
                 if ((Input.GetKeyDown(KeyCode.E))&&(key_cond()))
                 {
                     print("e key was pressed");
+                    //Cursor.lockState = CursorLockMode.Confined;
+                    audioSource.PlayOneShot(doorSound, 1.2F);
                 }
             }
         }
