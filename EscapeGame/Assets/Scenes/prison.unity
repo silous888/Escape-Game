@@ -2340,6 +2340,7 @@ MonoBehaviour:
   player: {fileID: 1313063170}
   cam_pc: {fileID: 1163172449}
   cam_player: {fileID: 2050124133}
+  interfaceEnigme: {fileID: 435560750}
 --- !u!64 &371803419
 MeshCollider:
   m_ObjectHideFlags: 0

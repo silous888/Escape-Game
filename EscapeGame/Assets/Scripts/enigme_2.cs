@@ -11,6 +11,12 @@ public class enigme_2 : MonoBehaviour
     public GameObject player;
     public GameObject cam_pc;
     public GameObject cam_player;
+    public GameObject interfaceEnigme;
+
+    private void Start()
+    {
+        interfaceEnigme.SetActive(true);
+    }
 
 
     // Update is called once per frame
@@ -22,6 +28,7 @@ public class enigme_2 : MonoBehaviour
         {
 
             print("defocus");
+            interfaceEnigme.SetActive(false);
             cam_pc.gameObject.SetActive(false);
             player.gameObject.SetActive(true);
             cam_player.gameObject.GetComponent<cam_focus_pc>().enabled = false;
