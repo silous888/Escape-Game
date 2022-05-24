@@ -13,6 +13,7 @@ public class inventaire : MonoBehaviour
     public Image red_im;
     public Image green_im;
     public Image blue_im;
+    public bool elecRepare;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class inventaire : MonoBehaviour
         key_red=false;
         key_green=false;
         key_blue=false;
+        elecRepare=false;
 }
 
     // Update is called once per frame
