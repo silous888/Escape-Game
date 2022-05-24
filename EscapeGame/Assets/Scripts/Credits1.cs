@@ -4,11 +4,31 @@ using UnityEngine;
 
 public class Credits : MonoBehaviour
 {
-    public float speed = -0.05f;
+    public float speed;
 
+    float positionY = 0f;
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, speed, 0);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            speed += 1f;
+        }
+        if (Input.GetMouseButtonDown(1) && speed > 1f)
+        {
+
+            speed -= 1f;
+        }
+
+        transform.Translate(0, -speed, 0);
+
+        positionY = transform.position.y;
+
+        if (positionY<-4500)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("prison");
+            print("Ici Camden Curtis, au rapport");
+        }
     }
 }
