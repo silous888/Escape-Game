@@ -5,7 +5,7 @@ using UnityEngine;
 public class Credits : MonoBehaviour
 {
     public float speed;
-
+    public float limit;
     float positionY = 0f;
     // Update is called once per frame
     void Update()
@@ -25,7 +25,7 @@ public class Credits : MonoBehaviour
 
         positionY = transform.position.y;
 
-        if (positionY<-4500)
+        if (positionY<limit)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("prison");
             print("Ici Camden Curtis, au rapport");

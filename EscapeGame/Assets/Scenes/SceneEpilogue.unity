@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.6, y: 113, z: -18.4}
+  m_LocalPosition: {x: -25.6, y: 118, z: -18.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -479,7 +479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b22c1cb40afd6479debc8dd718cc3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -0.05
+  speed: 0.05
+  limit: -500
 --- !u!1 &1160234425
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,33 +570,32 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Apres un court moment de lucidite, vous arrivez a dechiffrer le code et
     vous ouvrez la porte vers la baie d\u2019amarrage. Devant vous, un champ de bataille.
-    Les soldats rebelles face \xE0 l'infanterie robotique de la Federation.  Les
-    tirs de blasters fusent dans tous les sens. Une explosion a droite. une autre
-    a gauche. Vous hesitez a vous avancer pour faire face \xE0 ce danger imminent.
-    une petite voix au fond de votre cortex cerebrale vous dit que peut-etre que
-    le fond de votre cellule n'etait pas si inconfortable que ca.  \r\nAu fond de
-    la baie d\u2019amarrage, vous apercevez votre vaisseau presque flambant neuf.
-    une Banshee-V876, un modele de pointe en vitesse subspatiale. Votre sang ne fait
-    qu\u2019un tour et vous foncez a travers l\u2019immense complexe. Des explosions
-    retentissent mais ne vous ralentissent pas. une partie de la tole du plafond
-    s'effondre sur votre chemin et vous vous retrouvez projete vers la carlingue
-    d\u2019un vieux transporteur. Le temps de reprendre conscience, vous vous rendez
-    compte que l\u2019alarme d\u2019urgence rugit encore plus fort qu\u2019auparavant.
-    La plate-forme d'atterrissage s'enflamme a cause des armes incendiaires des rebelles.
-    L\u2019odeur du napalm au petit matin, il n\u2019y rien de mieux.  Vous vous
-    relevez, slalomez entre les differents obstacles et vous vous glissez jusqu\u2019\xE0
-    votre vaisseau. Votre esprit se fige. Le silence vous envahit et vous invoquez
-    votre instinct de pilote legendaire. Sans une goutte de sueur, vous enclenchez
-    les moteurs de votre vaisseau. Vous savez que la moindre seconde d\u2019hesitation
-    et les batteries anti-aeriennes de la station vous abattent sans sommation. La
-    bataille fait toujours rage dehors et malgre cela, un calme olympien s\u2019empare
-    de vous. Camren Curtis n\u2019est pas pret pour mourir aujourd\u2019hui vous
-    dites vous. Les reacteurs desormais prets, vous vous envoler hors de BSL-SR388.
-    Vos acrobaties aeriennes vous permettent de vous enfuir de la station spatiale
-    et vous enclencher la propulsion hyperluminique. \r\n\r\n\tVous voila sauve de
-    toute cette pagaille. Ces affaires politiques ne vous concernent pas. Apres mures
-    reflexions, vous vous dites que finalement, avec ces multiples peripeties, cette
-    anguille ne vaut pas le coup. \r\n"
+    Les soldats rebelles face a l'infanterie robotique de la Federation.  Les tirs
+    de blasters fusent dans tous les sens. Une explosion a droite. une autre a gauche.
+    Vous hesitez a vous avancer pour faire face \xE0 ce danger imminent. une petite
+    voix au fond de votre cortex cerebrale vous dit que peut-etre que le fond de
+    votre cellule n'etait pas si inconfortable que ca.  \r\nAu fond de la baie d\u2019amarrage,
+    vous apercevez votre vaisseau presque flambant neuf. une Banshee-V876, un modele
+    de pointe en vitesse subspatiale. Votre sang ne fait qu\u2019un tour et vous
+    foncez a travers l\u2019immense complexe. Des explosions retentissent mais ne
+    vous ralentissent pas. une partie de la tole du plafond s'effondre sur votre
+    chemin et vous vous retrouvez projete vers la carlingue d\u2019un vieux transporteur.
+    Le temps de reprendre conscience, vous vous rendez compte que l\u2019alarme d\u2019urgence
+    rugit encore plus fort qu\u2019auparavant. La plate-forme d'atterrissage s'enflamme
+    a cause des armes incendiaires des rebelles. L\u2019odeur du napalm au petit
+    matin, il n\u2019y rien de mieux.  Vous vous relevez, slalomez entre les differents
+    obstacles et vous vous glissez jusqu\u2019\xE0 votre vaisseau. Votre esprit se
+    fige. Le silence vous envahit et vous invoquez votre instinct de pilote legendaire.
+    Sans une goutte de sueur, vous enclenchez les moteurs de votre vaisseau. Vous
+    savez que la moindre seconde d\u2019hesitation et les batteries anti-aeriennes
+    de la station vous abattent sans sommation. La bataille fait toujours rage dehors
+    et malgre cela, un calme olympien s\u2019empare de vous. Camren Curtis n\u2019est
+    pas pret pour mourir aujourd\u2019hui vous dites vous. Les reacteurs desormais
+    prets, vous vous envoler hors de BSL-SR388. Vos acrobaties aeriennes vous permettent
+    de vous enfuir de la station spatiale et vous enclencher la propulsion hyperluminique.
+    \r\n\r\n\tVous voila sauve de toute cette pagaille. Ces affaires politiques ne
+    vous concernent pas. Apres mures reflexions, vous vous dites que finalement,
+    avec ces multiples peripeties, cette anguille ne vaut pas le coup. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea81bdd38b53f02459c39edc2e5041f3, type: 2}
   m_sharedMaterial: {fileID: 2747096200530360766, guid: ea81bdd38b53f02459c39edc2e5041f3, type: 2}
