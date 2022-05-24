@@ -2323,6 +2323,7 @@ MonoBehaviour:
   text: {fileID: 2050775662}
   resolu: 0
   cam_pc: {fileID: 1163172449}
+  interfaceEnigme: {fileID: 435560750}
 --- !u!114 &365358164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,6 +2342,7 @@ MonoBehaviour:
   cam_pc: {fileID: 1163172449}
   cam_player: {fileID: 2050124133}
   interfaceEnigme: {fileID: 435560750}
+  reponse: {fileID: 2102720647}
 --- !u!64 &371803419
 MeshCollider:
   m_ObjectHideFlags: 0

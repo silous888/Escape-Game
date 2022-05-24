@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class enigme_2 : MonoBehaviour
 {
@@ -12,21 +14,22 @@ public class enigme_2 : MonoBehaviour
     public GameObject cam_pc;
     public GameObject cam_player;
     public GameObject interfaceEnigme;
+    public TMP_InputField reponse;
 
-    private void Start()
-    {
-        interfaceEnigme.SetActive(true);
-    }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (resolu) porte_placard.GetComponent<Animation>().enabled = true;
+        //alt+155 = ø
+        if(reponse.text=="x@P3røCUBE666"){
+            resolu=true;
+            porte_placard.GetComponent<Animation>().enabled = true;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
+            Cursor.lockState = CursorLockMode.Locked;
             print("defocus");
             interfaceEnigme.SetActive(false);
             cam_pc.gameObject.SetActive(false);

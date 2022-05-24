@@ -12,6 +12,7 @@ public class utilisation_pc2 : MonoBehaviour
     public Text text;
     public bool resolu;
     public GameObject cam_pc;
+    public GameObject interfaceEnigme;
 
 
     private void Start()
@@ -36,9 +37,12 @@ public class utilisation_pc2 : MonoBehaviour
                 {
                     text.enabled = true;
                     gameObject.GetComponent<Outline>().enabled = true;
+                    gameObject.GetComponent<enigme_2>().enabled = false;
                 }
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    interfaceEnigme.SetActive(true);
+                    Cursor.lockState = CursorLockMode.Confined;
                     print("e key was pressed");
                     cam.GetComponent<cam_focus_pc>().cam_pc = cam_pc;
                     cam.GetComponent<cam_focus_pc>().num_enigme = 2;
@@ -47,7 +51,6 @@ public class utilisation_pc2 : MonoBehaviour
                     cam.GetComponent<cam_focus_pc>().z = 0;
                     cam.GetComponent<cam_focus_pc>().pc = gameObject;
                     gameObject.GetComponent<enigme_2>().enabled = true;
-                    gameObject.GetComponent<enigme_2>().resolu = true;
                     if (!resolu) cam.GetComponent<cam_focus_pc>().enabled = true;
                     
 
