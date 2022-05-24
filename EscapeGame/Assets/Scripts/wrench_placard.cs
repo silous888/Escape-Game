@@ -5,7 +5,7 @@ using UnityEngine.UI;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
-public class wrench_placard: MonoBehaviour
+public class wrench_placard : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cam;
