@@ -24,7 +24,7 @@ public class enigme_2 : MonoBehaviour
         //alt+155 = ø
         if(reponse.text=="x@P3røCUBE666"){
             resolu=true;
-            porte_placard.GetComponent<Animation>().enabled = true;
+            porte_placard.GetComponent<Animation>().Play();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
