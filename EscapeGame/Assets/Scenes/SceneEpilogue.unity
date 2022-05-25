@@ -273,7 +273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -417, y: -595}
+  m_AnchoredPosition: {x: -452.6, y: -550.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763276587
@@ -296,12 +296,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cardinal Vincent - Pilon Thibault  - Kazemi "Gabe" Hugo
-
-
-
-    Thanks
-    for playing ! See you Soon on our next project'
+  m_text: "Cardinal Vincent\nPilon Thibault\nKazemi \"Gabe\" Hugo\n\n\nThanks for
+    playing ! \nSee you Soon on our next project"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ebbca23d37730e4ca1eb217db5b5950, type: 2}
   m_sharedMaterial: {fileID: 6497498320329318491, guid: 2ebbca23d37730e4ca1eb217db5b5950, type: 2}
@@ -335,7 +331,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -364,7 +360,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -63.841553, z: 60.585484, w: 84.02826}
+  m_margin: {x: 62.030525, y: -63.841553, z: 32.403503, w: 84.02826}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -699,11 +695,11 @@ MonoBehaviour:
     et vous ouvrez la porte vers la baie d\u2019amarrage. Devant vous, un champ de
     bataille. Les soldats rebelles face a l'infanterie robotique de la Federation. 
     Les tirs de blasters fusent dans tous les sens. une explosion a droite. une autre
-    a gauche. Vous hesitez a vous avancer pour faire face a ce danger imminent. une
+    a gauche. vous hesitez a vous avancer pour faire face a ce danger imminent. une
     petite voix au fond de votre cortex cerebrale vous dit que peut-etre que le fond
     de votre cellule n'etait pas si inconfortable que ca.  \r\nAu fond de la baie
     d\u2019amarrage, vous apercevez votre vaisseau presque flambant neuf. une Banshee-V876,
-    un modele de pointe en vitesse subspatiale. Votre sang ne fait qu\u2019un tour
+    un modele de pointe en vitesse subspatiale. votre sang ne fait qu\u2019un tour
     et vous foncez a travers l\u2019immense complexe. Des explosions retentissent
     mais ne vous ralentissent pas. une partie de la tole du plafond s'effondre sur
     votre chemin et vous vous retrouvez projete vers la carlingue d\u2019un vieux
@@ -712,7 +708,7 @@ MonoBehaviour:
     plate-forme d'atterrissage s'enflamme a cause des armes incendiaires des rebelles.
     L\u2019odeur du napalm au petit matin, il n\u2019y rien de mieux.  vous vous
     relevez, slalomez entre les differents obstacles et vous vous glissez jusqu\u2019a
-    votre vaisseau. Votre esprit se fige. Le silence vous envahit et vous invoquez
+    votre vaisseau. votre esprit se fige. Le silence vous envahit et vous invoquez
     votre instinct de pilote legendaire. Sans une goutte de sueur, vous enclenchez
     les moteurs de votre vaisseau. vous savez que la moindre seconde d\u2019hesitation
     et les batteries anti-aeriennes de la station vous abattent sans sommation. La
@@ -720,7 +716,7 @@ MonoBehaviour:
     de vous. Camden Curtis n\u2019est pas pret pour mourir aujourd\u2019hui vous
     dites vous. Les reacteurs desormais prets, vous vous envoler hors de BSL-SR388.
     vos acrobaties aeriennes vous permettent de vous enfuir de la station spatiale
-    et vous enclencher la propulsion hyperluminique. \r\n\r\n\tvous voila sauve de
+    et vous enclenchez la propulsion hyperluminique. \r\n\r\n\tvous voila sauve de
     toute cette pagaille. Ces affaires politiques ne vous concernent pas. Apres mures
     reflexions, vous vous dites que finalement, avec ces multiples peripeties, cette
     anguille ne vaut pas le coup. \r\n"
