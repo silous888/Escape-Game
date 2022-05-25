@@ -12,7 +12,7 @@ public class PorteElec : MonoBehaviour
     public Text text;
     public GameObject player;
     private bool etatPorte;
-
+    
     private void start(){
         etatPorte=false;
     }
@@ -38,6 +38,7 @@ public class PorteElec : MonoBehaviour
                     gameObject.GetComponent<Outline>().enabled = false;
                     etatPorte =true;
                     gameObject.GetComponent<Animation>().Play();
+                        cam.GetComponent<voice_gestion>().mecano_play();
                 }
 
             }
