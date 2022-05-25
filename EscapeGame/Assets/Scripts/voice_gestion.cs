@@ -15,7 +15,7 @@ public class voice_gestion : MonoBehaviour
     public AudioClip[] security;
     public AudioClip[] vaisseau;
     public AudioClip[] mecano;
-
+    public AudioClip[] error;
     AudioClip audio;
     AudioSource audioSource;
     void Start()
@@ -77,6 +77,13 @@ public class voice_gestion : MonoBehaviour
     {
         int length = mecano.Length;
         audio = mecano[Random.Range(0, length)];
+        audioSource.PlayOneShot(audio, 0.7F);
+    }
+
+    public void error_play()
+    {
+        int length = error.Length;
+        audio = error[Random.Range(0, length)];
         audioSource.PlayOneShot(audio, 0.7F);
     }
 }
