@@ -74,6 +74,7 @@ public class pc_corridor : MonoBehaviour
             time += Time.deltaTime;
             if (time > 4.5f)
             {
+                Cursor.lockState = CursorLockMode.Confined;
                 UnityEngine.SceneManagement.SceneManager.LoadScene("SceneEpilogue");
             }
         }
