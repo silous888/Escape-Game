@@ -30,6 +30,7 @@ public class enigme_2 : MonoBehaviour
             resolu=true;
             gameObject.GetComponent<utilisation_pc2>().resolu=true;
             porte_placard.GetComponent<Animation>().Play();
+            cam_player.GetComponent<voice_gestion>().vaisseau_play();
             interfaceEnigme.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             cam_pc.gameObject.SetActive(false);
