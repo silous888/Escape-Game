@@ -90,21 +90,37 @@ public class enigme_1 : MonoBehaviour
         {
             case 0:
                 if (Input.GetKeyDown(keys[0])) return true;
-                else if ((Input.GetKeyDown(keys[1])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3]))) error++;
+                else if ((Input.GetKeyDown(keys[1])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3])))
+                {
+                    error++;
+                    cam_player.GetComponent<voice_gestion>().error_play();
+                }
                 break;
 
             case 1:
                 if (Input.GetKeyDown(keys[1])) return true;
-                else if ((Input.GetKeyDown(keys[0])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3]))) error++;
+                else if ((Input.GetKeyDown(keys[0])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3])))
+                {
+                    error++;
+                    cam_player.GetComponent<voice_gestion>().error_play();
+                }
                 break;
 
             case 2:
                 if (Input.GetKeyDown(keys[1])) return true;
-                else if ((Input.GetKeyDown(keys[0])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3]))) error++;
+                else if ((Input.GetKeyDown(keys[0])) || (Input.GetKeyDown(keys[2])) || (Input.GetKeyDown(keys[3])))
+                {
+                    error++;
+                    cam_player.GetComponent<voice_gestion>().error_play();
+                }
                 break;
             case 3:
                 if (Input.GetKeyDown(keys[2])) return true;
-                else if ((Input.GetKeyDown(keys[0])) || (Input.GetKeyDown(keys[1])) || (Input.GetKeyDown(keys[3]))) error++;
+                else if ((Input.GetKeyDown(keys[0])) || (Input.GetKeyDown(keys[1])) || (Input.GetKeyDown(keys[3])))
+                {
+                    error++;
+                    cam_player.GetComponent<voice_gestion>().error_play();
+                }
                 break;
             case 4:
                 if (Input.GetKeyDown(keys[1])||Input.GetKeyDown(keys[0])) return true;
